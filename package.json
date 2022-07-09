@@ -1,0 +1,27 @@
+{
+  "name": "notion-api-helper",
+  "version": "0.0.1",
+  "description": "Helper functions to with the notion client API",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "author": "Mohammad Omar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.76.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "dev": "tsc --emitDeclarationOnly",
+    "build": "rm -rf dist && rollup -c && tsc --emitDeclarationOnly"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@notionhq/client": "^2.0.0"
+  }
+}
